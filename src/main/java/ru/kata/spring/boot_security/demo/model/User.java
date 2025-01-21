@@ -9,7 +9,6 @@ import java.util.Set;
 
 @Entity
 @Table(name = "users")
-// Имплементируйте модели Role и User интерфейсами GrantedAuthority и UserDetails
 public class User implements UserDetails {
 
     @Id

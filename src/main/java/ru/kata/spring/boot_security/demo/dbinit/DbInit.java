@@ -29,7 +29,7 @@ public class DbInit {
         roleService.addRole(admin);
         roleService.addRole(user);
 
-        userService.save(new User("admin", "admin@admin.com", "admin", Set.of(admin)));
-        userService.save(new User("user", "user@user.com", "user", Set.of(user)));
+        userService.saveUser(new User("admin", "admin@admin.com", "admin", Set.of(admin)));
+        userService.saveUser(new User("user", "user@user.com", "user", Set.of(user)));
     }
 }

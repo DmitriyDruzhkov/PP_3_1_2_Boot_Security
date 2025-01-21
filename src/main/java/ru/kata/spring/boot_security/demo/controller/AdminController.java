@@ -20,8 +20,8 @@ public class AdminController {
         this.roleService = roleService;
     }
 
-    @GetMapping("")
-    public String userList(Model model) {
+    @GetMapping
+    public String showUserList(Model model) {
         model.addAttribute("users", userService.findAll());
         return "admin";
     }
